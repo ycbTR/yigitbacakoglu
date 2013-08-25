@@ -7,7 +7,7 @@ class Asset < ActiveRecord::Base
                                          :small => "#{convert_options} 100x100",
                                          :product => "#{convert_options} 240x240",
                                          :large => "#{convert_options} 600x600",
-                                         :original => "#{original_convert_options} 1024x768"},
+                                         :original => "#{convert_options} 1024x768"},
                     :default_style => :product,
                     :url => "/assets/photos/:style/:filename",
                     :path => "assets/photos/:style/:filename"
