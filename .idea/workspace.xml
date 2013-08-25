@@ -31,7 +31,7 @@
     <file path="/show.html.erb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377435152317" ignored="false" />
     <file path="/_form.html.erb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377427271132" ignored="false" />
     <file path="/20130824224455_create_posts.rb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377426465653" ignored="false" />
-    <file path="/blog.html.erb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377434166424" ignored="false" />
+    <file path="/blog.html.erb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377441141759" ignored="false" />
     <file path="/effects.css" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377430208000" ignored="false" />
     <file path="/_post_item.html.erb" changelist="817b1e43-08da-4df2-abce-f5a6a4476b75" time="1377435255191" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,19 +53,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blog.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="blog.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/blog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="3" selection-start="2639" selection-end="2639" vertical-scroll-proportion="-0.42548078">
+            <state line="141" column="80" selection-start="3569" selection-end="3589" vertical-scroll-proportion="-2.4683545">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blog/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="28" selection-start="2711" selection-end="2711" vertical-scroll-proportion="0.0">
+            <state line="80" column="22" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.6568182">
               <folding />
             </state>
           </provider>
@@ -75,7 +75,10 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/_post_item.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="42" column="12" selection-start="1405" selection-end="1405" vertical-scroll-proportion="-12.416667">
-              <folding />
+              <folding>
+                <marker date="1377435291000" expanded="true" signature="958:1240" placeholder="if ... end" />
+                <marker date="1377435291000" expanded="true" signature="1252:1385" placeholder="unless ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +96,12 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="37" selection-start="239" selection-end="239" vertical-scroll-proportion="-5.0">
-              <folding />
+              <folding>
+                <marker date="1377435203000" expanded="true" signature="31:61" placeholder="do ... end" />
+                <marker date="1377435203000" expanded="true" signature="99:246" placeholder="do ... end" />
+                <marker date="1377435203000" expanded="true" signature="124:236" placeholder="do ... end" />
+                <marker date="1377435203000" expanded="true" signature="277:336" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +110,16 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="9" selection-start="485" selection-end="572" vertical-scroll-proportion="-13.125">
-              <folding />
+              <folding>
+                <marker date="1377435185000" expanded="true" signature="31:346" placeholder="do ... end" />
+                <marker date="1377435185000" expanded="true" signature="63:338" placeholder="..." />
+                <marker date="1377435185000" expanded="true" signature="89:152" placeholder="..." />
+                <marker date="1377435185000" expanded="true" signature="178:327" placeholder="..." />
+                <marker date="1377435185000" expanded="true" signature="205:314" placeholder="..." />
+                <marker date="1377435185000" expanded="true" signature="233:300" placeholder="..." />
+                <marker date="1377435185000" expanded="true" signature="383:480" placeholder="do ... end" />
+                <marker date="1377435185000" expanded="true" signature="510:569" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,11 +194,11 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blog/effects.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blog/jquery.fancybox.css" />
         <option value="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blog/style.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/blog.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_post_item.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/blog.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blog/style.css" />
       </list>
     </option>
   </component>
@@ -775,37 +792,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blog/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="28" selection-start="2711" selection-end="2711" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="9" selection-start="485" selection-end="572" vertical-scroll-proportion="-13.125">
-          <folding />
+          <folding>
+            <marker date="1377435185000" expanded="true" signature="31:346" placeholder="do ... end" />
+            <marker date="1377435185000" expanded="true" signature="63:338" placeholder="..." />
+            <marker date="1377435185000" expanded="true" signature="89:152" placeholder="..." />
+            <marker date="1377435185000" expanded="true" signature="178:327" placeholder="..." />
+            <marker date="1377435185000" expanded="true" signature="205:314" placeholder="..." />
+            <marker date="1377435185000" expanded="true" signature="233:300" placeholder="..." />
+            <marker date="1377435185000" expanded="true" signature="383:480" placeholder="do ... end" />
+            <marker date="1377435185000" expanded="true" signature="510:569" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="37" selection-start="239" selection-end="239" vertical-scroll-proportion="-5.0">
-          <folding />
+          <folding>
+            <marker date="1377435203000" expanded="true" signature="31:61" placeholder="do ... end" />
+            <marker date="1377435203000" expanded="true" signature="99:246" placeholder="do ... end" />
+            <marker date="1377435203000" expanded="true" signature="124:236" placeholder="do ... end" />
+            <marker date="1377435203000" expanded="true" signature="277:336" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_post_item.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="12" selection-start="1405" selection-end="1405" vertical-scroll-proportion="-12.416667">
-          <folding />
+          <folding>
+            <marker date="1377435291000" expanded="true" signature="958:1240" placeholder="if ... end" />
+            <marker date="1377435291000" expanded="true" signature="1252:1385" placeholder="unless ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/blog.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="3" selection-start="2639" selection-end="2639" vertical-scroll-proportion="-0.42548078">
+        <state line="141" column="80" selection-start="3569" selection-end="3589" vertical-scroll-proportion="-2.4683545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blog/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="22" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.6568182">
           <folding />
         </state>
       </provider>
