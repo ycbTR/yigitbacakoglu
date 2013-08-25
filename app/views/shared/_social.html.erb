@@ -1,0 +1,38 @@
+<div class="section-title">
+  Social Accounts
+</div>
+<% if @user_registration.user_authentications %>
+    <% unless @user_registration.user_authentications.empty? %>
+
+        <p><strong><%= t(:added_services) %>:</strong></p>
+
+        <div class="authentications">
+          <% for user_authentication in @user_registration.user_authentications %>
+              <div class="authentication">
+
+              <p class="text-transparent"><i class="social-link icon-<%= user_authentication.provider %> custom "></i>
+                <%= "#{user_authentication.provider.camelize} " %>
+                <%#= link_to '<i class="icon-remove "></i>'.html_safe, '#', :remote => true %>
+              </p>
+
+                <%#= link_to "Delete", user_authentication, :class => "removeAuth" %>
+              </div>
+          <% end %>
+          <div class="clear"></div>
+        </div>
+    <% end %>
+
+<% end %>
+<%= content_tag(:p, content_tag(:strong, t(:add_another_service))) %>
+<%= render :partial => "shared/social_buttons" %>
+<style>
+    .icon-facebook.custom {
+        color: #3b5998;
+        font-size: 25px;
+    }
+
+    .icon-twitter.custom {
+        font-size: 25px !important;
+        color: rgb(0, 173, 255);
+    }
+</style>

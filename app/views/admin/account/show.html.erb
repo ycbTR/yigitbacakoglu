@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="box bordered">
+        <div class="box-header">
+          <i class="icon-user"></i> <%= t(:my_account) %>
+        </div>
+        <%= form_for @user_registration, :url => admin_account_path, :method => :put, :html => {:class => "mainForm"} do |f| %>
+
+            <div class="row-fluid">
+
+              <div class="span6">
+                <div class="padded">
+                  <div class="section-title">
+                    <%= t(:profile) %>
+                  </div>
+                  <div class="vpadded">
+                    <%= f.fields_for :user do |usr| %>
+                        <div class="input full-width">
+                          <%= usr.text_field :firstname, :placeholder => t(:firstname) %>
+                        </div>
+                        <div class="input full-width">
+                          <%= usr.text_field :lastname, :placeholder => t(:lastname) %>
+                        </div>
+                        <div class="input full-width">
+                          <%= f.email_field :email, :placeholder => t(:email) %>
+                        </div>
+                    <% end %>
+
+                  </div>
+                </div>
+              </div>
+              <div class="span6">
+                <div class="padded">
+                  <div class="section-title">
+                    Change Password
+                  </div>
+                  <div class="vpadded">
+                    <div class="input full-width">
+
+                      <%= f.password_field :password, :placeholder => "Password" %>
+                    </div>
+                    <div class="input full-width">
+
+                      <%= f.password_field :password_confirmation, :placeholder => 'Password Confirmation' %>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="padded">
+                <div class="vpadded">
+                  <div class="clearfix"></div>
+                  <%= f.submit "Update", :class => "btn medium-blue" %> or
+                  <%= link_to "Cancel", admin_path %>
+                </div>
+
+              </div>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+

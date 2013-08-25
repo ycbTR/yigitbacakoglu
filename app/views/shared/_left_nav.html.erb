@@ -1,0 +1,40 @@
+<!--:match_path => new_admin_order_path-->
+
+
+<nav id="primary" class="main-nav collapsible-nav">
+  <!-- Brand -->
+  <a id="sidebar-brand" href="<%= root_path %>">
+    TalkyCloud
+  </a>
+  <button type="button" class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".nav-collapse">
+    <i class="icon-reorder"></i>
+  </button>
+
+  <ul class="nav-collapse collapse">
+
+    <!-- Profile -->
+    <li class="profile">
+      <a href="#profile-opts" class="accordion-toggle" data-toggle="collapse">
+        <%= image_tag avatar_url(@current_user), :class => "avatar" %>
+        <span class="text" id="profile-text">
+            <%= @current_user.try(:firstname) %> <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="profile-opts" class="collapse secondary">
+        <%= tab :accounts, :label => t(:my_account), :url => admin_account_path, :match_path => "/admin/account.*" %>
+        <li class="">
+          <%= link_to t(:logout), destroy_user_session_path, :method => :delete %>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Dashboard -->
+    <%= tab :dashboard, :label => t(:dashboard), :url => admin_path, :icon => 'dashboard', :match_path => "/admin" %>
+    <!-- Components -->
+    <!--Accordion end-->
+    <%= tab :categories, :label => "Categories", :url => admin_categories_path, :icon => 'list', :match_path => admin_categories_path %>
+    <%= tab :posts, :label => "Posts", :url => admin_posts_path, :icon => 'list', :match_path => admin_posts_path %>
+
+  </ul>
+</nav>

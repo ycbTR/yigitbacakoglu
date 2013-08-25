@@ -1,0 +1,22 @@
+<%= content_for :container_nav do %>
+    <div class="row-fluid">
+      <div class="span9">
+        <h2 class="title"><%= @post.title %></h2>
+      </div>
+      <div class="span3">
+        <ul class="pager">
+          <li class="next">
+            <a href="<%= posts_path %>">← Back</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<% end %>
+
+<%= content_for :container_body do %>
+    <%= render :partial => "post_item", :locals => {:all => true, :post => @post} %>
+<% end %>
+
+<%= content_for :sidebar do %>
+    <%= render :partial => "shared/sidebar" %>
+<% end %>

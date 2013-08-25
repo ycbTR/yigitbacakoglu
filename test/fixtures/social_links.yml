@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  provider: MyString
+  profile_id: 1
+
+two:
+  url: MyString
+  provider: MyString
+  profile_id: 1

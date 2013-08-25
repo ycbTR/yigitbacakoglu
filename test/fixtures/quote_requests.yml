@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  title: MyString
+  description: MyText
+  budget: 9.99
+  deadline: 2013-08-25
+
+two:
+  email: MyString
+  title: MyString
+  description: MyText
+  budget: 9.99
+  deadline: 2013-08-25

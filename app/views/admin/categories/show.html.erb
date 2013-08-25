@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @category.name %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @category.position %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%= @category.permalink %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @category.keywords %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @category.description %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @category.parent_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_category_path(@category) %> |
+<%= link_to 'Back', admin_categories_path %>

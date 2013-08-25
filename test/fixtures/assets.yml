@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  viewable_id: 1
+  viewable_type: MyString
+  position: 1
+  alt: MyString
+  type: 
+
+two:
+  viewable_id: 1
+  viewable_type: MyString
+  position: 1
+  alt: MyString
+  type: 

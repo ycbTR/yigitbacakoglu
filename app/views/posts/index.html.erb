@@ -1,0 +1,15 @@
+<%= content_for :container_nav do %>
+    <h2>Blog</h2>
+<% end %>
+
+
+<%= content_for :container_body do %>
+    <% @posts.each do |post| %>
+        <%= render :partial => "post_item", :locals => {:all => false, :post => post} %>
+    <% end %>
+<% end %>
+
+
+<%= content_for :sidebar do %>
+    <%= render :partial => "shared/sidebar" %>
+<% end %>
