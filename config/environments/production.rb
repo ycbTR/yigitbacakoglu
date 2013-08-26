@@ -57,19 +57,5 @@ Yigitbacakoglu::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  config.assets.precompile << Proc.new { |path|
-    if path =~ /\.(css|js)\z/
-      full_path = Rails.application.assets.resolve(path).to_path
-      if !config.assets.precompile.include?(full_path)
-        puts "including asset: " + full_path
-        true
-      else
-        puts "Warning ! duplicate asset path: " + full_path
-        false
-      end
-    else
-      false
-    end
-  }
-
+  
 end
