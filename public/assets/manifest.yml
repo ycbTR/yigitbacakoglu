@@ -81,7 +81,7 @@ admin/application.js: admin/application-fd911254c772dc1a3f87eeca126e3583.js
 admin/excanvas.js: admin/excanvas-0ded19f478d2b964c4f95967f358cad8.js
 admin/html5shiv.js: admin/html5shiv-73699f685a6784df201fb4adac652277.js
 admin/ie_fix.js: admin/ie_fix-7d97fde8de75593d2b13c20ad216e9e7.js
-application.js: application-cab793b50cbfb2d510c95259cfed75de.js
+application.js: application-dcc1bb83b00e85042874aeb62f850721.js
 blog/app.js: blog/app-5f5a7b9d3c46092053ee9a7820cb4ba1.js
 blog/jquery.fancybox.pack.js: blog/jquery.fancybox.pack-6b8ac1c332c65a3ddc787270ec457b8b.js
 blog/respond.js: blog/respond-b8cff59033173ec3d0c4b10501987011.js
